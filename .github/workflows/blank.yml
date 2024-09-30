@@ -15,7 +15,7 @@ jobs:
         with:
           repository: japps-taio/teste2
           ref: 'main'
-          token:  ${{ secrets.ACTIONS_GITHUB_TOKEN }}
+          token: ${{ github.token }}
       - name: Create report file
         run: date +%s > report.txt
       - name: Commit report
