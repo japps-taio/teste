@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          repository: teste2
+          repository: japps-taio/teste2
           ref: 'main'
           token:  ${{ secrets.ACTIONS_GITHUB_TOKEN }}
       - name: Create report file
